@@ -4,7 +4,7 @@ import getpass
 # Making an instance of the PdfFileWriter class and storing it in a variable
 writer = PdfFileWriter()
 
-
+# New explicitly i maded first
 # Explicitly ask the user what the name of the original file is
 pdf_name = input('Pleast type in the name of the pdf file suffixed with its extention: ')
 
@@ -21,6 +21,7 @@ password = getpass.getpass(prompt = "Set a Password: ")
 # Encrypt the copy of the original file
 writer.encrypt(password)
 
+# Open writer
 # Opens a new pdf (write brinary permission) and writes the content of the 'writer' into it
 with open('secured.pdf', 'wb') as f:
     writer.write(f)
