@@ -4,7 +4,7 @@ import getpass
 # Making an instance of the PdfFileWriter class and storing it in a variable
 writer = PdfFileWriter()
 
-# New explicitly i maded first
+
 # Explicitly ask the user what the name of the original file is
 pdf_name = input('Pleast type in the name of the pdf file suffixed with its extention: ')
 
